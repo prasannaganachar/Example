@@ -18,7 +18,7 @@ public class Base {
 
 }
 
-class Derived  {
+class Derived  extends Base{
 	
 	Derived() {
 		super();

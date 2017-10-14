@@ -10,7 +10,7 @@ public class ImageDemo {
 		System.out.println(" static in block");
 	}
 	
-	public static ImageDemo() {
+	public ImageDemo() {
 		System.out.println(" constr");
 	}
 	static class Image {

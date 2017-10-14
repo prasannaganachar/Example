@@ -2,6 +2,7 @@ package com.basic;
 
 public class BrackContinue {
 
+	private String name;
 	class A{}
 	/**
 	 * @param args
