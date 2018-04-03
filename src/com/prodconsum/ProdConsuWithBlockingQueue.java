@@ -57,10 +57,10 @@ public class ProdConsuWithBlockingQueue {
 		while(true) {
 			Thread.sleep(100);
 			
-			//if(random.nextInt(10) == 0) {
+			if(random.nextInt(10) == 0) {
 				Integer value = blockingQueue.take();
 				System.out.println(" value taken :" + value + "; size :" + blockingQueue.size());
-			//}
+			}
 		}
 	}
 

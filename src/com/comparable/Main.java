@@ -14,7 +14,7 @@ public class Main {
 	 */
 	public static void main(String[] args) {
 		
-		System.out.println("Main");
+		//System.out.println("Main");
 		Main m1 = new Main();
 		m1.add();
 		// TODO Auto-generated method stub
@@ -37,6 +37,8 @@ public class Main {
 		System.out.println("sort list:"+list);
 		
 		Collections.sort(list, SortComparable.compartorClass1);
+		
+		System.out.println("after cCollections sort list:"+list);
 		
 		list.sort(SortComparable.compartorClass1);
 		

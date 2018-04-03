@@ -17,10 +17,12 @@ public class OddEvenSemPhore {
 		Thread t1 = new Thread(threadEven);
 		ThreadOdd threadOdd = new OddEvenSemPhore().new ThreadOdd();
 		Thread t2 = new Thread(threadOdd);
-		t1.start();
+		
 		try {
 			//t1.join();
+			
 			t2.start();
+			t1.start();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}

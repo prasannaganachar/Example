@@ -26,7 +26,25 @@ public class X {
 	
 	public static void badMethod() {
 		// TODO Auto-generated method stub
+		//throw new Exception();
 		throw new Error();
 	}
 
 }
+
+//##################OUT PUT##################
+/******
+ * 1 if throwgh exception it would excecute catch follwed by finally block and follwed by end statement
+ * out put is 
+ * B
+ * C
+ * D
+ */ 
+
+
+/******
+ * 1 if throw Error it would excecute finally block and throw error message
+ * out put is 
+ * C
+ * Error mesage
+ */

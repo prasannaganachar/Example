@@ -13,10 +13,10 @@ public class OverloadMain {
 		System.out.println(" str concate " + s + s);
 	}
 	
-	/*public void print(String x ) {
+	public void print(String x ) {
 		System.out.println(" print string x");
 	}
-	public void print(Integer x ) {
+	/*public void print(Integer x ) {
 		System.out.println(" print intger x");
 	}*/
 
@@ -57,7 +57,7 @@ public class OverloadMain {
 		addMain.print(null);
 		//addMain.print(20);
 		
-		B b = new B();
+		//B b = new B();
 		//b.add("test");
 		
 		

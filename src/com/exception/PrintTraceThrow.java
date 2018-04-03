@@ -8,15 +8,12 @@ public class PrintTraceThrow {
 	}
 	
 	private void method2() throws Exception{
-		// TODO Auto-generated method stub
 		System.out.println("method2");
 		method3();
 	}
-	private Exception method3() {
+	private Exception method3() throws Exception {
 		System.out.println("method3");
-		return new Exception();
-		// TODO Auto-generated method stub
-		
+		return new Exception();	
 	}
 
 	/**
@@ -29,7 +26,7 @@ public class PrintTraceThrow {
 			pt.method1();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println(e);
+			System.out.println("test");
 		}
 	}
 
