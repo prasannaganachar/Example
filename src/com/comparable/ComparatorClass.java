@@ -4,7 +4,6 @@ import java.util.Comparator;
 
 public abstract class ComparatorClass implements Comparator<SortComparable>{
 
-	@Override
 	public int compare(SortComparable o1, SortComparable o2) {
 		// TODO Auto-generated method stub
 		

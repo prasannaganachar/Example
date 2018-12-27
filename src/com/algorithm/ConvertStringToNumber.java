@@ -13,6 +13,8 @@ public class ConvertStringToNumber {
             int tmpAscii = (int)c;
             sum = (sum*10)+(tmpAscii-zeroAscii);
         }
+        
+        System.out.println("int vale: " +Integer.parseInt("sa"));
         return sum;
 	}
 	/**

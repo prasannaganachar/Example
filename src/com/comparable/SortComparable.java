@@ -19,7 +19,6 @@ public class SortComparable implements Comparable<SortComparable> {
 		this.lastName = lastName;
 	}
 	
-	@Override
 	public int compareTo(SortComparable o) {
 		// TODO Auto-generated method stub
 		
@@ -58,7 +57,6 @@ public class SortComparable implements Comparable<SortComparable> {
 	
 	public static Comparator<SortComparable> compartorClass1 = new Comparator<SortComparable>() {
 
-		@Override
 		public int compare(SortComparable o1, SortComparable o2) {
 			// TODO Auto-generated method stub
 			

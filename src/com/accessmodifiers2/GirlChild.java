@@ -12,5 +12,10 @@ public class GirlChild extends BoyChild {
 	protected void setGender(String gender) {
 		this.gender = gender;
 	}
+	
+	public void setNoOfLegs(int noOfLegs12) {
+		//noOfLegs = noOfLegs12;
+		System.out.println("Test child");
+	}
 
 }

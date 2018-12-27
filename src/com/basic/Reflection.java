@@ -5,7 +5,7 @@ import java.lang.reflect.Field;
 public class Reflection {
 
 	static int age;
-	private CacheManager c = new Cac
+	//private CacheManager c = new Cac
 	public Reflection() {
 		// TODO Auto-generated constructor stub
 	}

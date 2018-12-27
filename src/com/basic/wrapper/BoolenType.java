@@ -13,6 +13,7 @@ public class BoolenType {
 		
 		Boolean b3 = Boolean.parseBoolean("true");
 		
+		System.out.println(b3 == b1);
 		System.out.println(b3 + "" + b1 +"" +b2);
 		System.out.println(b1.equals(b2));
 

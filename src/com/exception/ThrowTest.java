@@ -1,15 +1,28 @@
 package com.exception;
 
+import java.io.IOException;
+import java.lang.Math;
+
 public class ThrowTest {
 
-	public static void aMethod() throws Exception
+	class Calculator {
+		double power(int n, int p) throws Exception {
+			if (p < 0 || n < 0) {
+				 throw new Exception("n and p should be non-negative.");
+			}
+			else {
+				return Math.pow(n, p);
+			}
+		}
+	}
+	public static void aMethod()
 	{
 		try {
 			//This will  throw exception into calling method and it will execute catch block and final block in called method
 			// if catch block is added in this method it will catch in this method it self and execute final block of code. 
-			throw new Exception();
+			throw new IOException();
 		}
-		catch(Exception e) {
+		catch(IOException e) {
 			System.out.println("a method exception");
 		}
 		finally {
@@ -19,10 +32,11 @@ public class ThrowTest {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
         try {
-        	aMethod();
+        	//aMethod();
+        	throw new Exception();
         }
         catch (Exception e) {
         	System.out.println("Exception");

@@ -1,5 +1,8 @@
 package com.algorithm;
 
+import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
+
 public class BSTree {
 
 	class Node {
@@ -8,6 +11,16 @@ public class BSTree {
 		Node right;
 	}
 	
+	/*
+	 * Follwing operation
+	 * 1. Insert
+	 * 2. find Height
+	 * 3. find Min
+	 * 4. Find Max
+	 * 5. delete Node
+	 * 6. In order
+	 * 7. levelOrder
+	 */
 	
 	public Node insert(Node node, int val) {
 		if (node == null) {
@@ -21,6 +34,12 @@ public class BSTree {
 			node.right = insert(node.right,val);
 		}
 		return node;
+	}
+	
+	public int findHeight(Node root) {
+		if (root == null)
+			return -1;
+		return Math.max(findHeight(root.left), findHeight(root.right)) + 1;
 	}
 	
 	private Node createNewNode(int val) {
@@ -76,6 +95,16 @@ public class BSTree {
 		}
 		return right;
 	}
+	
+	
+	private Node FindMax(Node node) {
+		// TODO Auto-generated method stub
+		
+		while(node.right != null) {
+			node = node.right;
+		}
+		return node;
+	}
 
 	void Inorder(Node root) {
 		if(root == null) return;
@@ -83,6 +112,24 @@ public class BSTree {
 		Inorder(root.left);       //Visit left subtree
 		System.out.println(root.data);  //Print data
 		Inorder(root.right);      // Visit right subtree
+	}
+	
+	public void levelOrder(Node node) {
+		ArrayBlockingQueue<Node> queue = new ArrayBlockingQueue<Node>(10);
+		
+		queue.add(node);
+		System.out.println("level order" +queue.element());
+		
+		while(!queue.isEmpty()) {
+			Node temNode = queue.poll();
+			System.out.println(temNode.data);
+			if(temNode.left != null) {
+				queue.add(temNode.left);
+			}
+			if(temNode.right != null) {
+				queue.add(temNode.right);
+			}
+		}
 	}
 	
 	/**
@@ -96,14 +143,17 @@ public class BSTree {
 		root = bNode.insert(root, 8);
 		root = bNode.insert(root, 3);
 		root = bNode.insert(root, 9);
-		//root = bNode.insert(root, 10);
+		root = bNode.insert(root, 10);
 		
-		bNode.deleteNode(root, 3);
+		System.out.println(" find height value : "+ bNode.findHeight(root));
+		/*bNode.deleteNode(root, 3);
 		root = bNode.insert(root, 4);
 		root = bNode.insert(root, 20);
 		bNode.Inorder(root);
-		System.out.println(" find min value : "+ bNode.FindMin(root).data);
+		System.out.println(" find min value : "+ bNode.FindMin(root).data);*/
 		//System.out.println(bNode);
+		
+		bNode.levelOrder(root);
 
 	}
 

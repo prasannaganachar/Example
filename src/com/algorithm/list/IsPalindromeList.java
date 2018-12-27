@@ -1,7 +1,15 @@
 package com.algorithm.list;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+
+import org.apache.log4j.Logger;
+
 public class IsPalindromeList {
 
+	static Logger log = Logger.getLogger(IsPalindromeList.class.getName());
 	public Boolean isPalindrome(CustomList list) {
 		
 		//1. revers and compare both the list 
@@ -31,6 +39,7 @@ public class IsPalindromeList {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		HashMap<Integer,Integer> test = new HashMap<>();
 		CustomList customList = new CustomList();
 		customList.insert(1);
 		customList.insert(2);
@@ -41,6 +50,9 @@ public class IsPalindromeList {
 		
 		IsPalindromeList isPalindromeList = new IsPalindromeList();
 		System.out.println("is palndrom : " +isPalindromeList.isPalindrome(customList));
+		
+		log.debug("Hello this is a debug message");
+	    log.info("Hello this is an info message");
 
 	}
 

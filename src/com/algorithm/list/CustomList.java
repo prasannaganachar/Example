@@ -52,11 +52,11 @@ public class CustomList {
 		}
 		
 		Node head = root;
-		while(head.next != null) {
+		while(head != null) {
 			System.out.println(head.data);
 			head = head.next;
 		}
-		System.out.println(head.data);
+		//System.out.println(head.data);
 	}
 	
 	
@@ -132,9 +132,9 @@ public class CustomList {
 		
 	//	customList.delete(20);
 		
-		customList.deleteAtPostion(1);
+		//customList.deleteAtPostion(1);
 		System.out.println("***********AFTER DELETE 20************");
-		customList.display();
+		//customList.display();
 		
 	}
 

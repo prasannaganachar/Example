@@ -17,7 +17,7 @@ public class TrywithResources {
 		try (Myresourc Myresourc = new TrywithResources().new Myresourc()) {
 			System.out.println("main try block");
 			throw new Exception("try block exception");
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println(" message :" + e.getMessage());
 		}

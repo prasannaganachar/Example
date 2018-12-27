@@ -23,7 +23,7 @@ public class OwnLinkedList {
 		if (crunchifyCurrent != null) {
  
 			// starting at the head node, crawl to the end of the list and then add element after last node
-			while (crunchifyCurrent.getNext() != null) {
+			while (((Object) crunchifyCurrent).getNext() != null) {
 				crunchifyCurrent = crunchifyCurrent.getNext();
 			}
  

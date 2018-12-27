@@ -42,6 +42,8 @@ public class LinkedList {
 		
 		LinkedList list = new LinkedList();
 		
+		List
+		
 		list.head = new Node(1);
 		Node second = new Node(2);
 		Node thired = new Node(3);

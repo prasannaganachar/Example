@@ -48,7 +48,7 @@ public class CoraCollectionMain {
 		
 		while(tit.hasNext()) {
 			Entry entry = tit.next();
-			System.out.println(" key :"+entry.getKey() + " Value :"+entry.getValue());
+			System.out.println(" key :"+entry.getKey() + "Value :"+entry.getValue());
 		}
 		
 		

@@ -14,9 +14,12 @@ public class DogMain {
 		// TODO Auto-generated method stub
 		
 		HashMap<String, Integer> map = new HashMap<>();
+		//TreeMap<String, Integer> map = new TreeMap<>();
 		map.put("abcdef", 15);
 		map.put("abcdfg", 25);
-		map.put("abcdfh", 35);
+		map.put("abcdfg", 35);
+		map.put(null, 35);
+		map.put(null, 3);
 		System.out.println(" Size"+map.size());
 		List<Dog> list = new ArrayList<Dog>();
 

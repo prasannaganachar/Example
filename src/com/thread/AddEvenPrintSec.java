@@ -18,7 +18,7 @@ public class AddEvenPrintSec {
 				
 				for (int i=0;i<50;i++)	{
 					synchronized (res) {
-						//if (i%2 !=0) {
+						if (i%2 !=0) {
 							System.out.println(i);
 							res.notify();
 							try {
@@ -27,7 +27,7 @@ public class AddEvenPrintSec {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
-						//}
+						}
 					}
 				}
 			}
@@ -42,7 +42,7 @@ public class AddEvenPrintSec {
 				
 				for (int i=0;i<=50;i++){
 					synchronized (res) {
-						//if (i%2 == 0) {
+						if (i%2 == 0) {
 							System.out.println(i);
 							res.notify();
 							try {
@@ -51,7 +51,7 @@ public class AddEvenPrintSec {
 								// TODO Auto-generated catch block
 								e.printStackTrace();
 							}
-						//}
+						}
 					}	
 				}			
 			}

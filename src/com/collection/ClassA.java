@@ -13,8 +13,9 @@ public class ClassA {
 	  }
 
 	  public final int hashcode() {
+		  int hashcod = 7;
 		  //return 1;
 		  //return (int) Math.round(Math.random());
-		  return this.name.hashCode();
+		  return 7+this.name.hashCode();
 	  }
 }

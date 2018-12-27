@@ -2,7 +2,7 @@ package com.collection;
 
 public class Node {
 	// reference to the next node in the chain, or null if there isn't one.
-	//Node next;
+	Node next;
 
 	// data carried by this node. could be of any type you need.
 	Object data;
@@ -30,12 +30,12 @@ public class Node {
 		data = dataValue;
 	}
 
-	/*public Node getNext() {
+	public Node getNext() {
 		return next;
 	}
 
 	public void setNext(Node nextValue) {
 		next = nextValue;
-	}*/
+	}
 	
 }
