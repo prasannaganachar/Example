@@ -5,15 +5,17 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 
-public class IsPalindromeList {
+public class IsPalindromeList extends ClassLoader {
 
-	static Logger log = Logger.getLogger(IsPalindromeList.class.getName());
+	//static Logger log = Logger.getLogger(IsPalindromeList.class.getName());
 	public Boolean isPalindrome(CustomList list) {
 		
 		//1. revers and compare both the list 
 		CustomList node = new CustomList();
+		
+		//Class.
 		
 		com.algorithm.list.CustomList.Node root = list.root;
 		com.algorithm.list.CustomList.Node head = root;
@@ -36,6 +38,12 @@ public class IsPalindromeList {
 		
 		return true;
 	}
+	
+	
+	@Override
+	public Class loadClass(String name)  throws ClassNotFoundException {
+		return null;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -51,8 +59,8 @@ public class IsPalindromeList {
 		IsPalindromeList isPalindromeList = new IsPalindromeList();
 		System.out.println("is palndrom : " +isPalindromeList.isPalindrome(customList));
 		
-		log.debug("Hello this is a debug message");
-	    log.info("Hello this is an info message");
+		//log.debug("Hello this is a debug message");
+	    //log.info("Hello this is an info message");
 
 	}
 

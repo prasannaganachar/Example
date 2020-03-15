@@ -32,6 +32,9 @@ public class ReferenceExample {
      {
             int counter=0;
             WeakReference<ReferenceExample> ex = new WeakReference<ReferenceExample>(getRefrence());
+            
+            
+            System.out.println("Weak reference deleted  before:: " + ex.get());
             while(ex.get()!=null)
             {
                    counter++;

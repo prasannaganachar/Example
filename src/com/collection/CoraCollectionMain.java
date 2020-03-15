@@ -1,5 +1,9 @@
 package com.collection;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -14,7 +18,7 @@ public class CoraCollectionMain {
 	 * @param args
 	 */
 	static int a=10;
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
 		//static int a=10;
@@ -27,6 +31,7 @@ public class CoraCollectionMain {
 		hashMap.put(1, 4);
 		
 		hashMap.put(null, 5);
+		hashMap.put(null, 8);
 		
 		System.out.println("===================Has Map=============");
 		Iterator<Entry<Integer, Integer>> it = hashMap.entrySet().iterator();
@@ -50,6 +55,13 @@ public class CoraCollectionMain {
 			Entry entry = tit.next();
 			System.out.println(" key :"+entry.getKey() + "Value :"+entry.getValue());
 		}
+		
+		/*
+		 * BufferedReader b1 = new BufferedReader(new FileReader("test")); try(b1) {
+		 * 
+		 * } catch (FileNotFoundException e) { // TODO Auto-generated catch block
+		 * e.printStackTrace(); }
+		 */
 		
 		
 		

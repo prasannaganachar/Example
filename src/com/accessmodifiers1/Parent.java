@@ -6,6 +6,9 @@ public /*abstract*/ class Parent {
 	int noOfHands = 2;
 	protected static String gender = "boy";
 	
+	public String getPrasanna() {
+		 return "prasanna";
+	}
 	
 	public static int getNoOfLegs() {
 		System.out.println(" paren legs "+noOfLegs);

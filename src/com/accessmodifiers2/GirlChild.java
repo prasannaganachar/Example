@@ -5,7 +5,7 @@ import com.accessmodifiers1.Parent;
 
 public class GirlChild extends BoyChild {
 	
-	public  String getGender() {
+	protected  String getGender() {
 		return gender;
 	}
 
@@ -13,7 +13,7 @@ public class GirlChild extends BoyChild {
 		this.gender = gender;
 	}
 	
-	public void setNoOfLegs(int noOfLegs12) {
+	public static void setNoOfLegs(int noOfLegs12) {
 		//noOfLegs = noOfLegs12;
 		System.out.println("Test child");
 	}

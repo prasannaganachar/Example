@@ -1,5 +1,7 @@
 package com.generics;
 
+import java.util.ArrayList;
+
 /**
  * 1. Only generic classes can implement generic interfaces. 
  *    Normal classes can’t implement generic interfaces. For example, above generic interface can be implemented as,
@@ -27,8 +29,41 @@ package com.generics;
  */
 
 public class GeneInterface {
+	
+	
+	<T> GeneInterface(T t2) {
+		System.out.println(t2);
+	}
+	//Generic method
+	static <T> void printName(T t) {
+		System.out.println(t);
+	}
+	
+	
+	//Upper Bounder
+	static <T extends Number> void printName2(T t) {
+		System.out.println(t);
+	}
+	
+	static void processElements(ArrayList<?> a)
+	{
+		for (Object element : a)
+		{
+			System.out.println(element);
+		}
+	}
 
-	interface GenericInterface<T>
+
+	class GenClass<V extends Number> {
+		V v;
+		void setT(V t) {
+			v = t;
+		}
+	    V getT() {
+	    	return v;
+	    }
+	}
+	interface GenericInterface<T extends Object>
 	{
 	    void setT(T t);    
 	    T getT();
@@ -60,24 +95,47 @@ public class GeneInterface {
 	 //class GenericClass implements GenericInterface<T>
 	
 	
-	class GenericClass<T> implements GenericInterface<T>
+	class GenericClass<V extends Object> implements GenericInterface<V>
 	{
-	    T t;
-	    //Implementing setT() method
+	    V t;
 	    @Override
-	    public void setT(T t)
+	    public void setT(V t)
 	    {
 	        this.t = t;
 	    }
-	    //Implementing getT() method
 	    @Override
-	    public T getT()
+	    public V getT()
 	    {
 	        return t;
 	    }
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		GenericClass<Integer> gC = new GeneInterface(10000).new GenericClass<Integer>();
+		
+		gC.setT(10);
+		System.out.println(gC.getT());
+	
+		GenericClass<Double> gClass = new GeneInterface("prasanna constr").new GenericClass<>();
+		gClass.setT(10.10);
+		System.out.println(gClass.getT());
+		
+		GeneInterface.printName(new String("kumar"));
+		
+		GeneInterface.printName(new java.lang.Integer(20));
+		
+		GeneInterface.printName2(1020130);
+		
+		ArrayList<Integer> a1 = new ArrayList<>();
+
+		a1.add(10);
+
+		a1.add(20);
+
+		a1.add(30);
+		
+		GeneInterface.printName(a1);
+		GeneInterface.processElements(a1);
 
 	}
 

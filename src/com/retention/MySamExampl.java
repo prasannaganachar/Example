@@ -18,6 +18,4 @@ class MyAnnTest{
 }
 
 
-public class MySamExampl {
-	
-}
+/*s*/

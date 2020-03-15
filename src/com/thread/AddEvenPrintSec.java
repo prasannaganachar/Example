@@ -13,7 +13,7 @@ public class AddEvenPrintSec {
 		
 		final Object res = new Object();
 		
-		class  OddThred extends Thread {
+		/*class  OddThred extends Thread {
 			public void run() {
 				
 				for (int i=0;i<50;i++)	{
@@ -61,6 +61,58 @@ public class AddEvenPrintSec {
 		thread.start();
 		OddThred oddThred = new OddThred();
 		oddThred.start();
-
+*/
+		Thread t1 = new Thread() {
+			
+			public void run() {
+				synchronized (res) {
+					for(int i=0;i<20;i++) {
+						res.notify();
+						if (i%2 == 0) {
+							
+							System.out.println(i);
+							try {
+								res.wait();
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+						}
+					}
+				}
+				
+			}
+		};
+		
+		
+		Runnable r1 = new Runnable() {
+			
+			@Override
+			public void run() { 
+				synchronized (res) {
+					for(int i=0;i<20;i++) {
+						res.notify();
+						if (i%2 != 0) {
+							try {
+								res.wait();
+								System.out.println(i);
+							} catch (InterruptedException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							
+						}
+					}
+				}
+				
+				
+			}
+		};
+		
+		
+		
+		Thread tr1 = new Thread(r1);
+		tr1.start();
+		
 	}
 }

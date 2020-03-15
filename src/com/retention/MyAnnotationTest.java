@@ -58,7 +58,7 @@ public class MyAnnotationTest {
          
         MyAnnotationTest mat = new MyAnnotationTest();
         Field []fields =  MyAnnotationTest.class.getDeclaredFields();
-        ArrayList<String> fieldList = new ArrayList<String>(arg0)
+        ArrayList<String> fieldList = new ArrayList<String>();
         mat.myAnnotationTestMethod();
     }
 }

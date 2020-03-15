@@ -44,7 +44,7 @@ public class MainEquals {
 				// 1. compare two object referance to see whether they are refer the same instance
 		
 		int rec[] = {1,2,3,4,5};
-		System.out.println("Sum valu :" +summation(rec));
+		//System.out.println("Sum valu :" +summation(rec));
 				String s1 = new String("Hello");
 				String s2 = new String("Hello");
 				String s4 = "Hello"; 
@@ -67,8 +67,8 @@ public class MainEquals {
 				
 				//----------------------WRAPPER CLASS------------------
 				
-				Integer i = new Integer(10);
-				Integer i2 = new Integer(10);
+				Double i = new Double(10);
+				Double i2 = new Double(10);
 				int i3 = 10;
 				int i4 = 10;
 				int i5 = 11;
@@ -81,7 +81,7 @@ public class MainEquals {
 				System.out.println("i == i3:"+ (i==i3)); // TRUE
 				System.out.println("i2 equals i3:"+ (i2.equals(i3))); // TRUE 
 				
-				System.out.println("----------Class equals--------------------");
+				/*System.out.println("----------Class equals--------------------");
 				
 				Equals1 e1=new Equals1("test");
 				Equals1 e2=new Equals1("test");
@@ -103,13 +103,13 @@ public class MainEquals {
 				System.out.println("e1 Euals e2:"+e1.equals(e2));  // FALSE
 				
 				
-				HashSet<Integer> hs =  new HashSet<Integer>();
+				/*HashSet<Integer> hs =  new HashSet<Integer>();
 				
 				for(int j=0;j<=10;j++) {
 					hs.add(j);
 					System.out.println("remove set:" +hs.remove(j-1));
 				}
-				System.out.println(" size of hs :"+hs.size());
+				System.out.println(" size of hs :"+hs.size());*/
 	}
 
 }

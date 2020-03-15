@@ -35,6 +35,14 @@ public class TestEqualsMain {
 		System.out.println("hash map :"+test.size());
 		
 		System.out.println(" size of hash set :" + testHashSet.size());
+		
+		
+		int a=10;
+		int b=30;
+		
+		System.out.println(" size of hash set 1:" + testHashSet.size());
+		
+		System.out.println("add res:" + a+b);
 
 	}
 

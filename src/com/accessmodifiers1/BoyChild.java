@@ -3,9 +3,23 @@ package com.accessmodifiers1;
 public class BoyChild extends Parent {
 
 	
+	final static Integer i;
+	
+	static {
+		i=20;
+	}
+	
+	public BoyChild() {
+		// TODO Auto-generated constructor stub
+		i=10;
+	}
 	//String gender;
 	private String getGender() {
 		return gender;
+	}
+	
+	public String getPrasanna() {
+		return "prasanna_rithvik";
 	}
 
 	/*public void setGender(String gender) {
