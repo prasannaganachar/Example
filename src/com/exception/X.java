@@ -24,7 +24,7 @@ public class X {
 	}
 
 	
-	public static void badMethod() {
+	public static void badMethod() throws Exception {
 		// TODO Auto-generated method stub
 		//throw new Exception();
 		throw new Error();

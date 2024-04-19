@@ -51,9 +51,11 @@ public class IsPalindromeList extends ClassLoader {
 		CustomList customList = new CustomList();
 		customList.insert(1);
 		customList.insert(2);
-		customList.insert(1);
-		customList.insert(3);
-		
+		customList.insert(2);
+	//	customList.insert(3);
+		//  123 5  321
+
+		//  123 5  332
 		customList.display();
 		
 		IsPalindromeList isPalindromeList = new IsPalindromeList();

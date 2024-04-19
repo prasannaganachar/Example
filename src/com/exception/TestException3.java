@@ -15,12 +15,12 @@ public class TestException3 {
 		foo();
 	}
 
-	public static void bar(){
-		
+	public static void bar() throws Exception {
+		throw new RuntimeException("bar method");
 	}
 	
 	public static void foo() throws NullPointerException{
-		
+		throw new NullPointerException("foo method");
 	}
 
 }

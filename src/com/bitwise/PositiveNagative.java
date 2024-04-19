@@ -4,7 +4,9 @@ public class PositiveNagative {
 
 	static int findPosNagative(int i) 
 	{ 
-	    return 1 + (i >> 31) - (-i >> 31); 
+	    int k = (i >> 31);
+		int m = (-i >> 31);
+		return 1 + (i >> 31) - (-i >> 31);
 	} 
 	
 	public static void main(String[] args) {

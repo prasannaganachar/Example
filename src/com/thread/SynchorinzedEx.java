@@ -41,7 +41,7 @@ public synchronized void stageOne() {
 		
 		
 		try {
-			Thread.sleep(1);
+			Thread.sleep(1000);
 		}catch(InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -50,7 +50,7 @@ public synchronized void stageOne() {
 	
 	public synchronized void stageTwo() {
 		try {
-			Thread.sleep(1);
+			Thread.sleep(1000);
 		}
 		catch(InterruptedException e) {
 			e.printStackTrace();
@@ -76,6 +76,7 @@ public synchronized void stageOne() {
 		Thread t1 = new Thread(new Runnable() {
 			
 			public void run() {
+				System.out.println("Thread T1 Run");
 				synchorinzedEx.process();
 				
 			}
@@ -84,8 +85,8 @@ public synchronized void stageOne() {
       Thread t2 = new Thread(new Runnable() {
 			
 			public void run() {
+				System.out.println("Thread T2 Run");
 				synchorinzedEx.process();
-				
 			}
 		});
 		

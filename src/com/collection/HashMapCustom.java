@@ -13,7 +13,7 @@ public class HashMapCustom<K, V> {
 	         public Entry(K key, V value, Entry<K,V> next){
 	             this.key = key;
 	             this.value = value;
-	             this.next = next;
+	           //  this.next = next;
 	         }
 	     }
 	     
@@ -94,7 +94,7 @@ public class HashMapCustom<K, V> {
 	 
 	    /**
 	     * Method removes key-value pair from HashMapCustom.
-	     * @param key
+	     * @param deleteKey
 	     */
 	    public boolean remove(K deleteKey){
 	       
@@ -129,8 +129,7 @@ public class HashMapCustom<K, V> {
 	    /**
 	     * Method displays all key-value pairs present in HashMapCustom.,
 	     * insertion order is not guaranteed, for maintaining insertion order
-	     * refer LinkedHashMapCustom.
-	     * @param key
+	     * refer LinkedHashMapCustom
 	     */
 	    public void display(){
 	       

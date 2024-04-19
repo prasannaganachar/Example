@@ -1,21 +1,21 @@
 package com.collection;
 
-public class Node {
+public class Node1 {
 	// reference to the next node in the chain, or null if there isn't one.
-	Node next;
+	Node1 next;
 
 	// data carried by this node. could be of any type you need.
 	Object data;
 
-	// Node constructor
-	public Node(Object dataValue) {
+	// Node1 constructor
+	public Node1(Object dataValue) {
 		//next = null;
 		data = dataValue;
 	}
 
-	// another Node constructor if we want to specify the node to point to.
+	// another Node1 constructor if we want to specify the node to point to.
 	@SuppressWarnings("unused")
-	/*public Node(Object dataValue, Node nextValue) {
+	/*public Node1(Object dataValue, Node1 nextValue) {
 		next = nextValue;
 		data = dataValue;
 	}*/
@@ -30,11 +30,11 @@ public class Node {
 		data = dataValue;
 	}
 
-	public Node getNext() {
+	public Node1 getNext() {
 		return next;
 	}
 
-	public void setNext(Node nextValue) {
+	public void setNext(Node1 nextValue) {
 		next = nextValue;
 	}
 	

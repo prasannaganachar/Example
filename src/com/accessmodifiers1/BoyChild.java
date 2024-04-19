@@ -1,5 +1,7 @@
 package com.accessmodifiers1;
 
+import javafx.scene.Parent;
+
 public class BoyChild extends Parent {
 
 	
@@ -11,9 +13,9 @@ public class BoyChild extends Parent {
 	
 	public BoyChild() {
 		// TODO Auto-generated constructor stub
-		i=10;
+		//i=10;
 	}
-	//String gender;
+	String gender;
 	private String getGender() {
 		return gender;
 	}
@@ -27,12 +29,13 @@ public class BoyChild extends Parent {
 	}*/
 	
 	public static void setNoOfLegs(int noOfLegs12) {
-		noOfLegs = noOfLegs12;
+		//noOfLegs = noOfLegs12;
 		System.out.println("Test child");
 	}
 	
 	public static int getNoOfLegs() {
-		System.out.println(" child legs "+noOfLegs);
-		return noOfLegs;
+		/*System.out.println(" child legs "+noOfLegs);
+		return noOfLegs;*/
+		return 0;
 	}
 }

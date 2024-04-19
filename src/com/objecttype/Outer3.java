@@ -1,5 +1,5 @@
 package com.objecttype;
-interface Anonymous
+interface Anonymous2
 {
     public int getValue();
 }
@@ -8,7 +8,7 @@ public class Outer3
     private int data = 15;
     public static void main(String[] args)
     {
-        Anonymous inner = new Anonymous()
+        /*Anonymous inner = new Anonymous()
                 {
                     int data = 5;
                     public int getValue()
@@ -20,7 +20,7 @@ public class Outer3
                         return data;
                     }
                 };
-        Outer3 outer = new Outer3();
+        Outer3 outer = new Outer3();*/
        // System.out.println(inner.getValue() + inner.getData() + outer.data);
     }
 }

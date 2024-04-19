@@ -3,7 +3,7 @@ package com.collection;
 public class OwnLinkedList {
 	
 	private static int counter;
-	private Node head;
+	private Node1 head;
  
 	// Default constructor
 	public OwnLinkedList() {}
@@ -11,21 +11,21 @@ public class OwnLinkedList {
 	// appends the specified element to the end of this list.
 	public void add(Object data) {
  
-		// Initialize Node only incase of 1st element
+		// Initialize Node1 only incase of 1st element
 		if (head == null) {
-			head = new Node(data);
+			head = new Node1(data);
 		}
  
-		Node crunchifyTemp = new Node(data);
-		Node crunchifyCurrent = head;
+		Node1 crunchifyTemp = new Node1(data);
+		Node1 crunchifyCurrent = head;
  
 		// Let's check for NPE before iterate over crunchifyCurrent
 		if (crunchifyCurrent != null) {
  
 			// starting at the head node, crawl to the end of the list and then add element after last node
-			while (((Object) crunchifyCurrent).getNext() != null) {
+			/*while (((Object) crunchifyCurrent).getNext() != null) {
 				crunchifyCurrent = crunchifyCurrent.getNext();
-			}
+			}*/
  
 			// the last node's "next" reference set to our new node
 			crunchifyCurrent.setNext(crunchifyTemp);
@@ -41,7 +41,7 @@ public class OwnLinkedList {
 		// index must be 1 or higher
 		if (index <= 0)
 			return null;
-		Node crunchifyCurrent = null;
+		Node1 crunchifyCurrent = null;
 		if (head != null) {
 			crunchifyCurrent = head.getNext();
 			for (int i = 0; i < index; i++) {
@@ -63,7 +63,7 @@ public class OwnLinkedList {
 		if (index < 1 || index > size())
 			return false;
  
-		Node crunchifyCurrent = head;
+		Node1 crunchifyCurrent = head;
 		if (head != null) {
 			for (int i = 0; i < index; i++) {
 				if (crunchifyCurrent.getNext() == null)
