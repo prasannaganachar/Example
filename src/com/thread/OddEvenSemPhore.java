@@ -36,7 +36,10 @@ public class OddEvenSemPhore {
 			try {
 				sem.acquire();
 				for(int i=2;i<20;i+=2) {
-					System.out.println(""+i);
+					if (i%2 == 1) {
+						System.out.println("" + i);
+
+					}
 					sem.release();
 				}
 			} catch (InterruptedException e) {
@@ -50,8 +53,11 @@ public class OddEvenSemPhore {
 	   public void run() {
 		   try {
 					sem.acquire();
-					for(int i=1;i<20;i+=2) {
-						System.out.println(""+i);
+					for(int i=1;i<20;i++) {
+						if (i%2 == 0) {
+							System.out.println("" + i);
+							//sem.release();
+						}
 						sem.release();
 					}				
 				} catch (InterruptedException e) {

@@ -13,7 +13,7 @@ public class PrintTraceThrow {
 	}
 	private Exception method3() throws Exception {
 		System.out.println("method3");
-		return new Exception();	
+		 throw new Exception();
 	}
 
 	/**

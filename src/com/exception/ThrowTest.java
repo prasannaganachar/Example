@@ -35,8 +35,8 @@ public class ThrowTest {
 	public static void main(String[] args) throws Exception{
 		// TODO Auto-generated method stub
         try {
-        	//aMethod();
-        	throw new Exception();
+        	aMethod();
+        	//throw new Exception();
         }
         catch (Exception e) {
         	System.out.println("Exception");

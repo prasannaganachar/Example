@@ -30,7 +30,8 @@ public class SimpleThread {
 			ThreadTwo threadTwo = new ThreadTwo();
 			Thread thread = new Thread(threadOne);
 			Thread thread2 = new Thread(threadTwo);
-			thread.start();
+			//thread.start();
+		thread2.start();
 			//thread.interrupt();
 			
 			try {

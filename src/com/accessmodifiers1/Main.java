@@ -11,7 +11,7 @@ public class Main {
 		BoyChild bc = new BoyChild();
 		Parent parent = new Parent();
 		BoyChild.setNoOfLegs(10);
-		Parent.setNoOfLegs(20);
+		//Parent.setNoOfLegs(20);
 		System.out.println(" legs "+BoyChild.getNoOfLegs());
 		System.out.println(" legs "+Parent.getNoOfLegs());
 		

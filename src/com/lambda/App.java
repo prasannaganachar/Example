@@ -102,7 +102,8 @@ public class App {
 	        list.add("ankit");  
 	        list.add("mayank");  
 	        list.add("irfan");  
-	        list.add("jai");  
+	        list.add("jai");
+
 	          
 	   System.out.println("*****************Java Lambda Expression Example: Foreach Loop***********");
 	   list.forEach(n->System.out.println("element:"+n));

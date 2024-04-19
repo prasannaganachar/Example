@@ -1,3 +1,5 @@
+package com.retention;
+
 import java.lang.reflect.Method;
 
 
@@ -19,7 +21,7 @@ public class Meta {
 	// Next, get the annotation for this class.
 	MyAnno anno = m.getAnnotation(MyAnno.class);
 	// Finally, display the values.
-	System.out.println(anno.str() + " " + anno.val());
+	System.out.println(anno.str() + "\n " + anno.val());
 	} catch (NoSuchMethodException exc) {
 	System.out.println("Method Not Found.");
 	}

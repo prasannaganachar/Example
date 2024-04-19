@@ -17,7 +17,7 @@ public class BSTree {
 	 * 2. find Height
 	 * 3. find Min
 	 * 4. Find Max
-	 * 5. delete Node
+	 * 5. delete Node1
 	 * 6. In order
 	 * 7. levelOrder
 	 */
@@ -68,7 +68,7 @@ public class BSTree {
 			// find the data in node
 			//1 case no child
 			if(root.left == null && root.right == null) {
-				//Node temp = root;
+				//Node1 temp = root;
 				root = null;
 			}
 			else if(root.left == null) {

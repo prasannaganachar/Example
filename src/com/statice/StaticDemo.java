@@ -8,13 +8,13 @@ public class StaticDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		/*Derived derived = new Derived();
+		Derived derived = new Derived();
 		derived.display();
 		derived.print();
 		
 		Base derived1 = new Derived();
-		derived1.display();
-		derived1.print();*/
+		//derived1.display();
+		//derived1.print();
 		
 		StringBuilder st = new StringBuilder();
 		

@@ -23,7 +23,7 @@ public class OwnLinkedListMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		LinkedHashSet<Node> nodeSet = new LinkedHashSet<>();
+		/*LinkedHashSet<Node> nodeSet = new LinkedHashSet<>();
 		
 		nodeSet.add(new Node(10));
 		nodeSet.add(new Node(10));
@@ -31,12 +31,12 @@ public class OwnLinkedListMain {
 		
 		Iterator<Node> itSet = nodeSet.iterator();
 		
-		//System.out.println(" List Size" +((HashSet<Node>) itSet).size());
+		//System.out.println(" List Size" +((HashSet<Node1>) itSet).size());
 		while(itSet.hasNext()) {
 			
 			Node node = (Node)itSet.next();
 			System.out.println(" list vale :"+node.getData());
-		}
+		}*/
 		
 		OwnLinkedList list = new OwnLinkedList();
 		list.add("10");

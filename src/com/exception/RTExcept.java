@@ -16,6 +16,9 @@ public class RTExcept {
 			System.out.println("hello");
 			throwit();
 		}
+		catch(RuntimeException e) {
+			System.out.println("Run time Caught");
+		}
 		catch(Exception e) {
 			System.out.println("Caught");
 		}

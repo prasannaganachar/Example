@@ -84,7 +84,7 @@ public class LRUCache<K, V> {
 		}
 	}
 
-	// Node for doubly linked list
+	// Node1 for doubly linked list
 	class Node<T, U> {
 		T key;
 		U value;

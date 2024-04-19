@@ -26,13 +26,13 @@ public class LoggingExample {
         logger.addHandler(new MyHandler());
         try {
             //FileHandler file name with max size and number of log files limit
-            Handler fileHandler = new FileHandler("/Users/pankaj/tmp/logger.log", 2000, 5);
+            Handler fileHandler = new FileHandler("./logger.log", 2000, 5);
             fileHandler.setFormatter(new MyFormatter());
             //setting custom filter for FileHandler
             fileHandler.setFilter(new MyFilter());
             logger.addHandler(fileHandler);
             
-            for(int i=0; i<1000; i++){
+            for(int i=0; i<10; i++){
                 //logging messages
                 logger.log(Level.INFO, "Msg"+i);
             }

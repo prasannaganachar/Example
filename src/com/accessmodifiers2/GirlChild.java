@@ -4,7 +4,8 @@ import com.accessmodifiers1.BoyChild;
 import com.accessmodifiers1.Parent;
 
 public class GirlChild extends BoyChild {
-	
+
+	private String gender;
 	protected  String getGender() {
 		return gender;
 	}
