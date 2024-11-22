@@ -1,7 +1,6 @@
 package com.accessmodifiers1;
 
-import javafx.scene.Parent;
-
+import com.accessmodifiers1.Parent;
 public class BoyChild extends Parent {
 
 	
